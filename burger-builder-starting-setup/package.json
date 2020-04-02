@@ -31,6 +31,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "js-yaml": "^3.13.1",
+    "kind-of": "^6.0.3",
     "mem": "^6.0.1",
     "minimist": "^1.2.5",
     "object-assign": "4.1.1",
