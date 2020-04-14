@@ -5,20 +5,25 @@ import Aux from "../Auxilliary/Auxilliary";
 
 const withErrorHandler = (WrappedComponent, axios) => {
   return class extends Component {
+    // Using the constructor instead of componentWillMount
     constructor(props) {
       super(props);
+      // Other way of declaring the state
+      this.state = { error: null };
+      // Clear errors when sending request
       this.reqInterceptor = axios.interceptors.request.use(req => {
         this.setState({ error: null });
         return req;
       });
+      // Intercepting errors
       this.resInterceptor = axios.interceptors.response.use(res => res, error => {
         this.setState({ error: error });
       });
     }
 
-    state = {
-      error: null
-    };
+    // state = {
+    //   error: null
+    // };
 
     // componenWillMount() {
     //   axios.interceptors.request.use(req => {
