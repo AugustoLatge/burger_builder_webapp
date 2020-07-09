@@ -15,7 +15,7 @@ class Checkout extends Component {
   };
 
   render() {
-    let summary = <Redirect to="/" />
+    let summary = <Redirect to={`${process.env.PUBLIC_URL}/BurgerWebApp`} />
     if (this.props.ings) {
       const purchasedRedirect = this.props.purchased ? <Redirect to="/" /> : null;
       summary = (

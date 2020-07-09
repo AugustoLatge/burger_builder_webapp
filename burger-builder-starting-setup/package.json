@@ -1,6 +1,7 @@
 {
   "name": "burger-builder-starting-setup",
   "version": "0.1.0",
+  "homepage": "http://augustolatge.ca/BurgerWebApp",
   "private": true,
   "dependencies": {
     "acorn": "^7.1.1",

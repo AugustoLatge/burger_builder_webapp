@@ -36,7 +36,7 @@ sagaMiddleware.run(watchOrder);
 
 const app = (
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/BurgerWebApp">
       <App />
     </BrowserRouter>
   </Provider>
